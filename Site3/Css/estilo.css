@@ -1,0 +1,25 @@
+/* Corpo */
+
+body {
+    background-color: ghostwhite;
+}
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    height: 100vh;
+
+}
+
+
+
+.a, .b {
+    transform: scale(3);
+}
+
+
+
+/**/

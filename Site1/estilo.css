@@ -17,18 +17,6 @@ body {
     transition: transform 0.1s ease-in-out;
 }
 
-.btns_2 {
-    width: 150px;
-    height: 100px;
-    text-align: center;
-    font-size: 32px;
-    transition: transform 0.1s ease-in-out;
-}
-
-
-.btns_2:hover {
-    transform: scale(0.8);
-}
 .btns:hover {
     transform: scale(0.8);
 }
@@ -80,4 +68,13 @@ body {
     top: 35%;
     right: 45%;
     
+}
+/**/
+
+/* Caixa */
+
+.caixa {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
