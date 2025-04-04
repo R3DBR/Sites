@@ -23,58 +23,17 @@ body {
 /**/
 
 
-/* botao de resposta */
-.fases {
-    background-color: black;
-}
 
-
-
-
-.button_rps {
-    position: absolute;
-    right: 50%;
-    
-    width: 100px;
-    height: 40px;
-    background-color: black;
-    color: aliceblue;
-}
-
-/**/
-
-/* Dica */
-
-.dicas {
-    background-color: black;
-    color: aliceblue;
-    position: absolute;
-    top: 95%;
-    right: 5px;
-}
-
-/* Centralizar */
-
-
-.meio_f3 {
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    color: aliceblue;
-}
-
-.centro {
-    position: absolute;
-    top: 35%;
-    right: 45%;
-    
-}
-/**/
 
 /* Caixa */
 
 .caixa {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
