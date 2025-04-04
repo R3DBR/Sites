@@ -1,0 +1,10 @@
+.a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 0.5s ease-in-out;
+    transform: translate(-50%, -50%) scale(3);
+}
+.a:hover {
+    transform: translate(-50%, -50%) scale(3.5);
+}
