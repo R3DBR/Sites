@@ -1,0 +1,30 @@
+body {
+    background-color: #111;
+
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.btn {
+    position: absolute;
+    top: 180px;
+    left: 41%;
+    
+    color: whitesmoke;
+    background-color: #777;
+    font-size: 50px;
+    width: 250px;
+    height: 100px;
+    transition: ease-in-out 0.2s;
+}
+
+.btn:hover {
+    background-color: #500;
+    transform: scale(1.3);
+}
