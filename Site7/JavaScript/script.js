@@ -39,32 +39,31 @@ document.addEventListener("mousemove", function (e) {
         let angulo = raio * (180 / Math.PI);
 
         obj_player.style.transform = `translate(-50%, -50%) rotate(${angulo + 90}deg)`;
-        
-        let u_angulo = angulo + 90
     }
 });
 
 
 
-
 document.addEventListener("click", function (e) {
+    if (obj_cont.style.display !== "none") return;
 
-    let obj_bala = document.createElement("img")
-    obj_bala.src = "../etc/bala.png"
-    obj_bala.id = "bala_id"
-    bala_obj = document.getElementById("bala_id") 
+    let obj_bala = document.createElement("img");
+    obj_bala.src = "../etc/bala.png";
+    obj_bala.style.width = "20px";
+    obj_bala.style.position = "absolute";
 
     document.body.appendChild(obj_bala);
 
-    let match = transform.match(/rotate\(([-\d.]+)deg\)/)
-    let angle = match ? parseFloat(match[1]) : 0;
-
-    obj_bala.style.position = "absolute"
-    obj_bala.style.left = x + "px"
-    obj_bala.style.top = y + "px"
-
-})
-
-let mover = setInterval(() => {
-    x += Math.cos(angulo * Math.PI / 180) * 10;
-})
+    let mover = setInterval(() => {
+        bala_x += Math.cos(rad) * 10;
+        bala_y += Math.sin(rad) * 10;
+        obj_bala.style.left = bala_x + "px";
+        obj_bala.style.top = bala_y + "px";
+    
+        if (bala_x < 0 || bala_y < 0 || bala_x > window.innerWidth || bala_y > window.innerHeight) {
+            clearInterval(mover);
+            obj_bala.remove();
+        }
+    }, 16)
+    
+});

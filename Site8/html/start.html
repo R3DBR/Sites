@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init({
+        publicKey: "n-y5sVQ-z92XHK7EQ",
+        });
+        })();
+    </script>
+
+</head>
+<body>
+
+    <h1 class="titulo">VOLUNTÁRIOS IGREJA BETESDA SÃO CRISTOVÃO</h1>
+
+    <div class="caixa"  id="caixa_id">
+
+        <p class="para"> 1. Nome Completo</p>
+        <input type="text" id="nome_id" placeholder="Nome Completo" required>
+
+        <p class="para"> 2. Número de Telefone</p>
+        <input type="text" id="numero_id" placeholder="Número de Telefone" required>
+
+        <p class="para"> 3. Endereço</p>
+        <input type="email" id="email_id" placeholder="Endereço" required>
+
+        <p class="para"> 4. Gênero</p>
+        <select id="genero_id" class="genero" required>
+            <option value="" disabled selected>Selecione o Gênero</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+        </select>
+        
+        <p class="para"> 5. Idade</p>
+        <input type="number" id="idade_id" placeholder="Idade" required>
+
+        <p class="para"> 6. Estado Civil</p>
+        <select id="civil_id" class="genero" required>
+            <option value="" disabled selected>Selecione o Estado Civil</option>
+            <option value="Viúvo">Viúvo</option>
+            <option value="Solteiro">Solteiro</option>
+            <option value="Casado">Casado</option>
+            <option value="Divorciado">Divorciado</option>
+        </select>
+
+        <p class="para"> 7. É um membro da Betesda?</p>
+        <input type="text" id="membro_id" placeholder="Sim ou Não" required>
+
+        <p class="para"> 8. Já fez ou está fazendo ESC na igreja (Escola de capacitação)?</p>
+        <input type="text" id="esc_id" placeholder="Sim ou Não" required>
+
+        <p class="para"> 9. É batizado?</p>
+        <input type="text" id="batizado_id" placeholder="Sim ou Não" required>
+
+        <p class="para"> 10. Quanto tempo congrega na Betesda?</p>
+        <input type="text" id="tempo_id" placeholder="Tempo de Congregação" required>
+
+        <p class="para"> 11. Você ja serve em algu ministério? se sim qual setor? </p>
+        <input type="text" id="ministerio_id" placeholder="Ministério" required>
+
+        
+
+    </div>
+
+    <div class="caixa2">
+
+
+        <h1 class="t2">Qual setor você gostaria de ser voluntario?</h1>
+
+        <select id="setor_id" class="genero" required>
+            <option value="" disabled selected>Selecione o Setor</option>
+            <option value="Recepção"> Recepção </option>
+            <option value="Louvor"> Louvor </option>
+            <option value="Acolhimento"> Acolhimento </option>
+            <option value="KIDS"> KIDS </option>
+            <option value="Fotografia"> Fotografia </option>
+            <option value="Videos e Edições"> Videos e Edições </option>
+            <option value="Datashow"> Datashow </option>
+            <option value="Sonorização"> Sonorização </option>
+            <option value="Iluminação"> Iluminação </option>
+            <option value="Estacionamento"> Estacionamento </option>
+            <option value="Praça"> Praça de alimentação / Cozinha eventos </option>
+            <option value="Voluntário em geral"> Voluntário em geral </option>
+
+        </select>
+
+        <p class="para"> 12. Alguma pergunta sobre o voluntariado?</p>
+        <input type="text" id="pergunta_id" placeholder="Pergunta" required>
+
+
+        <div>
+            <button id="feito1_id" class="bton">Feito</button>
+        </div>
+        
+    </div>
+
+
+    <script src="../javascript/script.js"></script>
+</body>
+</html>

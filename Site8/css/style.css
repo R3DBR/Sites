@@ -1,0 +1,177 @@
+
+/* Textos */
+
+.caixa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    
+    width: 500px;
+    
+    margin: 0 auto;
+    background-color: rgb(189, 188, 231);
+    
+}
+
+.caixa input {
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(232, 227, 255);
+    transition: ease 0.3s;
+}
+
+.caixa input:hover,
+.caixa input:focus {
+    background-color: rgb(199, 203, 255);
+}
+
+
+/* ************************/
+
+
+/* Textos 2 */
+
+.caixa2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    
+    width: 500px;
+    padding-bottom: 100px;
+    
+    margin: 0 auto;
+    background-color: rgb(189, 188, 231);
+}
+
+.caixa2 input {
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(232, 227, 255);
+    transition: ease 0.3s;
+}
+
+.caixa2 input:hover,
+.caixa2 input:focus {
+    background-color: rgb(199, 203, 255);
+}
+/* t2 */
+
+.t2 {
+
+    width: 80%;
+    text-align: center;
+    background-color: sandybrown;
+}
+
+/**/
+
+
+/* Nomes */
+.para {
+    align-self: flex-start;
+    margin-left: 48px;
+
+    display: flex;
+    align-items: center;
+    text-align: left;
+    
+    margin-bottom: -10px;
+    margin-top: 50px;
+
+    font-size: 20px;
+    background-color: rgb(151, 71, 255);
+    width: 81%;
+}
+
+/****************************/
+
+body {
+    background-color: rgb(210, 216, 255);
+    color: rgb(15, 7, 46);
+}
+
+
+/* */
+.titulo {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+
+    width: 80%;
+    margin: 0 auto;
+
+    background-color: rgb(154, 153, 224);
+}
+
+
+/* */ 
+
+
+
+/* Genero */
+
+.genero {
+    width: 81%;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(232, 227, 255);
+    transition: ease 0.3s;
+    color: gray;
+}
+
+.genero:hover,
+.genero:focus {
+    background-color: rgb(199, 203, 255);
+}
+/* */ 
+
+
+.btof{
+    position: fixed;
+    
+    bottom: 20px;
+    transform: translateX(-50%);
+    transition: ease 0.3s;
+
+    width: 250px;
+    height: 50px;
+
+    font-size: 20px;
+    border: none;
+    border-radius: 3%;
+    z-index: 1000;
+    color: rgba(0, 0, 0, 0.397);
+    background-color: rgba(87, 87, 87, 0.397);
+}
+.bton{
+    position: fixed;
+    cursor: pointer;
+    bottom: 20px;
+    transform: translateX(-50%);
+    transition: ease 0.3s;
+
+    width: 250px;
+    height: 50px;
+    
+
+    font-size: 20px;
+    border: none;
+    border-radius: 3%;
+    z-index: 1000;
+    background-color: rgb(138, 105, 255)
+}
+
+
+.bton:hover {
+    scale: 1.1;
+}
+
+
