@@ -1,0 +1,139 @@
+
+
+namespace Praticas
+{
+    class Program
+    {
+
+
+        //Calculadora 
+        static void pratica3()
+        {
+            Console.WriteLine("Digite um numero: ");
+            string num1S = Console.ReadLine().Replace(".", ",");
+            double num1;
+
+            if (double.TryParse(num1S, out num1))
+            {
+                Console.WriteLine("Digite outro numero: ");
+                string num2S = Console.ReadLine().Replace(".",",");
+                double num2;
+
+                if (double.TryParse(num2S, out num2))
+                {
+                    Console.WriteLine("Escolha um operador: |+|-|*|/|");
+                    string escolha = Console.ReadLine();
+
+                    switch (escolha)
+                    {
+                        case "+":
+                            Console.WriteLine($"Seu resultado foi: {num1 + num2}");
+                            break;
+
+                        case "-":
+                            Console.WriteLine($"Seu resultado foi: {num1 - num2}");
+                            break;
+
+                        case "*":
+                            Console.WriteLine($"Seu resultado foi: {num1 * num2}");
+                            break;
+
+                        case "/":
+                            Console.WriteLine($"Seu resultado foi: {num1 / num2}");
+                            break;
+
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Infelizmente houve um erro :( /n tente novamente");
+                    Console.ReadKey();
+                    pratica3();
+                }
+            }
+            else
+            {
+                Console.WriteLine("Infelizmente houve um erro :( /n tente novamente");
+                Console.ReadKey();
+                pratica3();
+            }
+
+
+        }
+
+        //Medidor de Idade
+        static void pratica4()
+        {
+            Console.WriteLine("Insira sua idade: ");
+            string idadeS = Console.ReadLine();
+            int idade;
+
+            if (int.TryParse(idadeS, out idade))
+            {
+                if (idade >= 18)
+                {
+                    Console.WriteLine("Maior de Idade");
+                }
+                else
+                {
+                    Console.WriteLine("Menor de Idade");
+                }
+            }
+        }
+
+        //Aprovador, Reprovador e Recuperação
+        static void pratica5()
+        {
+            Console.WriteLine("Insira sua nota: ");
+            string notaS = Console.ReadLine();
+            int nota;
+
+            if (int.TryParse(notaS, out nota))
+            {
+                if (nota <= 4)
+                {
+                    Console.WriteLine("Reprovado");
+                }
+                else if (nota <= 6 && nota >= 5)
+                {
+                    Console.WriteLine("Recuperação");
+                }
+                else
+                {
+                    Console.WriteLine("Aprovado");
+                }
+            }
+        }
+
+
+        //Dado de Dias
+        enum dias
+        {
+            Domingo=1,
+            Segunda,
+            Terça,
+            Quarta,
+            Quinta,
+            Sexta,
+            Sabado
+        }
+        static void pratica6()
+        {
+            Console.WriteLine("Escolha um numero de 1 a 7: ");
+            string numS = Console.ReadLine();
+            int num;
+            
+
+            if (int.TryParse(numS, out num))
+            {
+                dias dia = (dias)num;
+                Console.WriteLine($"O numero que voce escolheu corresponde a {dia} na semana");
+            }
+        }
+
+        static void Main(string[] args)
+        {
+            pratica6();
+        }
+    }
+}
