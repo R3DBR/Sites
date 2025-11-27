@@ -131,9 +131,70 @@ namespace Praticas
             }
         }
 
+        //Contar de 1 a 3 com while
+
+        static void pratica7()
+        {
+            int cnt = 0;
+
+            while (cnt < 3)
+            {
+                cnt += 1;
+                Console.WriteLine($"Contando: {cnt}");
+            }
+        }
+
+        //contar os numeros pares de 2 a 10
+        static void pratica8()
+        {
+            for (int i = 2; i <= 10; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
+
+        //Mostrar 5 numeros de um Array
+        static void pratica9()
+        {
+            Console.WriteLine("Diga 5 numeros com espaços entre eles \nExemplo: 1 2 3 4 5");
+            string num_S = Console.ReadLine();
+            string[] num_SA = num_S.Split(' ');
+            
+            if (num_SA.Length == 1)
+            {
+                Console.WriteLine("Você digitou somente um numero!");
+            }
+            else
+            {
+                for (int i = 0; i < num_SA.Length; i++)
+                {
+                    Console.WriteLine(num_SA[i]);
+                }
+            }
+
+        }
+
+        //Crie um metodo de somar e use o Main para chamar o metodo
+        static void pratica10()
+        {
+            Console.WriteLine("Digite um numero: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Digite outro numero: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+            double res = num1 + num2;
+
+            Console.WriteLine($"Sua soma foi: {res}");
+
+
+        }
         static void Main(string[] args)
         {
-            pratica6();
+            pratica10();
         }
     }
 }
